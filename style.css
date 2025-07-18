@@ -1,0 +1,22 @@
+*{
+    magin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:rgba(117, 170, 255, 0.736);
+    text-align:center;
+    line: height 2.1em;
+
+}
+
+
+.hero img{
+    border-radius:50%;
+
+}
+
+.accent{
+    color:rgb(168, 83, 52);
+}
