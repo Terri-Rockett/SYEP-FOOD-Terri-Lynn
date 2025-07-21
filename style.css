@@ -5,9 +5,21 @@
 }
 
 body{
-    background-color:rgba(117, 170, 255, 0.736);
+    background-color:rgb(172, 253, 185);
     text-align:center;
     line: height 2.1em;
+
+p {
+  font-family: 'Trocchi', serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1em;
+  max-width: 600px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 
 }
 
@@ -18,5 +30,5 @@ body{
 }
 
 .accent{
-    color:rgb(168, 83, 52);
+    color:#26836c;
 }
