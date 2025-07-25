@@ -32,3 +32,19 @@ p {
 .accent{
     color:#26836c;
 }
+
+@media screen (max-width:768px;) {
+    body{background-color: rgb(83, 178, 177);}
+}
+.grid{
+  display:flex;
+  justify-content:center;
+  justify-content: space-around;
+}
+
+.grid div{
+    background-color: rgb(133, 76, 137);
+    border-radius: 150px;
+    padding: 15px;
+    min: width 100px;
+}
