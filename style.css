@@ -48,3 +48,108 @@ p {
     padding: 15px;
     min: width 100px;
 }
+
+/* Mobile-first layout */
+main {
+  display: block;
+  padding: 1rem;
+}
+
+/* Desktop layout with Flexbox */
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  section {
+    flex: 1;
+  }
+}
+
+#About {
+  background-color: #e3f2fd; /* light blue */
+}
+
+#Skills {
+  background-color: #fce4ec; /* light pink */
+}
+
+#Chaos-Energy {
+  background-color: #f3e5f5; /* lavender */
+}
+
+@media (min-width: 768px) {
+  #home,
+  #About,
+  #Skills,
+  #Chaos-Energy {
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+
+#home {
+  background-color: #fff9c4; /* light yellow */
+}
+
+#About {
+  background-color: #fce4ec; /* light pink */
+}
+
+#Skills {
+  background-color: #e3f2fd; /* light blue */
+}
+
+#Chaos-Energy {
+  background-color: #f3e5f5; /* lavender */
+}
+
+/* Mobile-first section colors */
+#home {
+  background-color: #fff9c4; /* Empowerment Yellow */
+}
+
+#About {
+  background-color: #fce4ec; /* Light Pink */
+}
+
+#Skills {
+  background-color: #e3f2fd; /* Light Blue */
+}
+
+#Chaos-Energy {
+  background-color: #f3e5f5; /* Lavender Chaos Vibe */
+}
+
+
+.chaos-footer {
+  background-color: #4a148c;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  border-top: 5px solid #ff4081;
+}
+
+@media (min-width: 768px) {
+  #home,
+  #About,
+  #Skills,
+  #Chaos-Energy {
+    background-color: transparent;
+  }
+}
