@@ -137,8 +137,10 @@ main {
 }
 
 /* Mobile-first section colors */
+@media (min-width: 768px) {
 body {
-  background: linear-gradient(to bottom, #F8C471, #FFFFFF);
+  background: linear-gradient(to bottom, #F8C471, #a3a3a3);
+}
 }
 
 .container {
