@@ -1,30 +1,21 @@
-const reviews = [
-    {
-        id: 1,
-        name: 'Billy',
-        job: 'doctor',
-        img: '#', 
-        text: ' Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.',
-        
-
-        {
-            id: 2,
-            name: 'Luey',
-            job: 'clown',
-            img: '#', 
-            text: ' Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.',
-        },
-
-        {
-            id: 3,
-            name: 'Elaine',
-            job: 'magician',
-            img: '#', 
-            text: ' Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.',
-        }
+const testimonials = [
+  {
+    name: "Mrs. Ortiz",
+    role: "Global History Teacher",
+    text: "Terri-Lynn always brought creativity and focus to our classroom. Although she can be pretty chatty at times, she usually makes it right with her participation and good grades."
+  },
+  {
+    name: "Mr. DaVila",
+    role: "Algebra 1 Teacher",
+    text: "She tackled every challenge with curiosity and persistence. Her kindness and dedication shows real growth and originality."
+  },
+  {
+    name: "Gabriella R.",
+    role: "Friend & Collaborator",
+    text: "We worked together on a coding project and Terri-Lynn was really fun and helped us finish off strong. She’s a pretty good leader and a great friend."
+  }
 ];
 
-const img = document.getElementById('person-img');
 const author = document.getElementById('author');
 const job = document.getElementById('job');
 const info = document.getElementById('info');
@@ -34,39 +25,37 @@ const nextBtn = document.querySelector('.next-btn');
 
 let currentItem = 0;
 
-//load inital item,//
+// ✅ Load initial testimonial
+window.addEventListener('DOMContentLoaded', function () {
+  showTestimonial(currentItem);
+});
 
-window.addEventListener('DOMContentLoaded'), function () {
-    const item = reviews[currentItem];
-    img.src = item.img;
-    author.textContent = item.name;
-    job.textContent = item.job;
-    info.textContent = item.text;
-};
-
-function showPerson(person){
-    const item = reviews[person];
-    img.src = item.img;
-    author.textContent = item.name;
-    job.textContent = item.job;
-    info.textContent = item.text;
+// ✅ Display testimonial
+function showTestimonial(index) {
+  const item = testimonials[index];
+  author.textContent = item.name;
+  job.textContent = item.role;
+  info.textContent = item.text;
 }
 
+// ✅ Next button
 nextBtn.addEventListener('click', function () {
-    currentItem++;
-    if (currentItem > reviews.length - 1) {
-        currentItem = 0;
-    }
-    showPerson(currentItem);
-};
+  currentItem++;
+  if (currentItem > testimonials.length - 1) {
+    currentItem = 0;
+  }
+  showTestimonial(currentItem);
+});
 
+// ✅ Previous button
 prevBtn.addEventListener('click', function () {
-    currentItem--;
-    if (currentItem < 0) {
-        currentItem = reviews.length 1;
-    }
-   showPerson(currentItem);
-};
+  currentItem--;
+  if (currentItem < 0) {
+    currentItem = testimonials.length - 1;
+  }
+  showTestimonial(currentItem);
+});
+
 
 
 

@@ -63,7 +63,7 @@ Global Styles
 ===============
 */
 
-
+/*
 *,
 ::after,
 ::before {
@@ -136,9 +136,9 @@ p {
 /*  global classes */
 
 
-/* section */
+/* section */ /*
 .section {
- padding-top: 2rem; /* reduce top padding */
+ padding-top: 2rem; /* reduce top padding */ /*
  padding-bottom: 5rem;
 }
 
@@ -164,7 +164,7 @@ main {
 ===============
 Reviews
 ===============
-*/
+*/ /*
 main {
  min-height: 100vh;
  display: grid;
@@ -183,7 +183,7 @@ main {
 }
 .container {
  width: 100vw;
- max-width: 900px; /* larger max-width */
+ max-width: 900px; /* larger max-width */ /*
  margin: 0 auto;
 }
 .review {
@@ -279,5 +279,183 @@ main {
 .random-btn:hover {
  background: var(--clr-primary-5);
  color: var(--clr-primary-1);
+}
+
+.zone {
+  background: url('green-hill-background.png') no-repeat center center;
+  background-size: cover;
+  padding: 2rem;
+  border: 3px solid #FFD700;
+  box-shadow: 0 0 10px #00FF99;
+}
+.ring {
+  position: absolute;
+  animation: floatRing 5s infinite linear;
+}
+
+@keyframes floatRing {
+  0% { left: -100px; top: 50px; }
+  100% { left: 100vw; top: 50px; }
+}
+
+#sonic-dash {
+  position: fixed;
+  bottom: 0;
+  left: -200px;
+  width: 150px;
+  animation: dashAcross 2s ease-out forwards;
+}
+
+@keyframes dashAcross {
+  to { left: 100vw; }
+}
+ */
+ 
+<meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Knuckles Zone: Testimonials</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --knuckles-red: #C0392B;
+      --knuckles-white: #ECF0F1;
+      --knuckles-black: #2C3E50;
+      --knuckles-green: #27AE60;
+      --knuckles-shadow: rgba(0, 0, 0, 0.3);
+    }
+
+    body {
+      background-color: var(--knuckles-red);
+      color: var(--knuckles-white);
+      font-family: 'Orbitron', sans-serif;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 0;
+      background-color: var(--knuckles-black);
+      color: var(--knuckles-green);
+      box-shadow: 0 4px 8px var(--knuckles-shadow);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .testimonial {
+      background-color: var(--knuckles-white);
+      color: var(--knuckles-black);
+      border-left: 8px solid var(--knuckles-green);
+      margin: 2rem 0;
+      padding: 1rem;
+      box-shadow: 0 4px 6px var(--knuckles-shadow);
+      border-radius: 8px;
+    }
+
+    .testimonial h2 {
+      margin-top: 0;
+      color: var(--knuckles-red);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--knuckles-black);
+      color: var(--knuckles-white);
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: var(--knuckles-green);
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .chaos-energy {
+      font-weight: bold;
+      color: var(--knuckles-green);
+    }
+  </style>
+
+
+:root {
+  --knuckles-red: #C0392B;
+  --knuckles-white: #ECF0F1;
+  --knuckles-black: #2C3E50;
+  --knuckles-green: #27AE60;
+  --knuckles-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Base Styles */
+body {
+  background-color: var(--knuckles-red);
+  color: var(--knuckles-white);
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 1rem;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--knuckles-black);
+  color: var(--knuckles-green);
+  box-shadow: 0 4px 8px var(--knuckles-shadow);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Testimonial Cards */
+.testimonial {
+  background-color: var(--knuckles-white);
+  color: var(--knuckles-black);
+  border-left: 8px solid var(--knuckles-green);
+  margin: 2rem 0;
+  padding: 1rem;
+  box-shadow: 0 4px 6px var(--knuckles-shadow);
+  border-radius: 8px;
+}
+
+.testimonial h2 {
+  margin-top: 0;
+  color: var(--knuckles-red);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--knuckles-black);
+  color: var(--knuckles-white);
+  font-size: 0.9rem;
+}
+
+/* Links */
+a {
+  color: var(--knuckles-green);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Chaos Energy Flair */
+.chaos-energy {
+  font-weight: bold;
+  color: var(--knuckles-green);
 }
 

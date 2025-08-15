@@ -1,4 +1,4 @@
-*{
+ *{
     magin:0;
     padding:0;
     box-sizing:border-box;
@@ -9,18 +9,36 @@ body{
     text-align:center;
     line: height 2.1em;
 
-p {
-  font-family: 'Trocchi', serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 1em;
-  max-width: 600px;
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
+
+
+
 }
 
+body {
+  background: linear-gradient(to bottom, #0055FF, #00FF99);
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+}
 
+#sonic-sidekick {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 100px;
+  z-index: 999;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.ring {
+  animation: bounce 1s infinite;
+}
+.zone-title {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px #FFD700;
+  border-bottom: 3px solid #FFD700;
 }
 
 
@@ -30,7 +48,7 @@ p {
 }
 
 .accent{
-    color:#26836c;
+    color:#00FF99;
 }
 
 @media screen (max-width:768px;) {
@@ -43,7 +61,7 @@ p {
 }
 
 .grid div{
-    background-color: rgb(133, 76, 137);
+    background-color: #FFD700;
     border-radius: 150px;
     padding: 15px;
     min: width 100px;
@@ -103,53 +121,45 @@ main {
 }
 
 #home {
-  background-color: #fff9c4; /* light yellow */
+  background-color: #ffeb3c; /* light yellow */
 }
 
 #About {
-  background-color: #fce4ec; /* light pink */
+  background-color: #0d00ff; /* light pink */
 }
 
 #Skills {
-  background-color: #e3f2fd; /* light blue */
+  background-color: #cf1100; /* light blue */
 }
 
 #Chaos-Energy {
-  background-color: #f3e5f5; /* lavender */
+  background-color: #000000; /* lavender */
 }
 
 /* Mobile-first section colors */
-#home {
-  background-color: #fff9c4; /* Empowerment Yellow */
+body {
+  background: linear-gradient(to bottom, #F8C471, #FFFFFF);
 }
 
-#About {
-  background-color: #fce4ec; /* Light Pink */
-}
-
-#Skills {
-  background-color: #e3f2fd; /* Light Blue */
-}
-
-#Chaos-Energy {
-  background-color: #f3e5f5; /* Lavender Chaos Vibe */
-}
-
-
-.chaos-footer {
-  background-color: #4a148c;
-  color: #fff;
-  text-align: center;
+.container {
+  display: flex;
+  flex-direction: column;
   padding: 1rem;
-  font-weight: bold;
-  border-top: 5px solid #ff4081;
 }
 
 @media (min-width: 768px) {
-  #home,
-  #About,
-  #Skills,
-  #Chaos-Energy {
-    background-color: transparent;
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
+
+.panel {
+  background: #fff;
+  border: 2px dashed #3498DB;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 10px #FF5733;
+}
+
+
